@@ -1,22 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio Page</title>
-    <meta name="description" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .sideways-banner {
+            white-space: nowrap;
+            font-size: 24px;
+            background-color: #4d8785c0;
+            color: white;
+            padding: 10px;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            z-index: 1; /* Ensure the banner stays on top of other elements */
+        }
+
+        .sideways-banner ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sideways-banner li {
+            margin-bottom: 20px;
+        }
+
+        .sideways-banner a {
+            text-decoration: none; /* Remove underline from links */
+            color: white; /* Set link text color to white */
+        }
+
+        .content {
+            margin-left: 220px; /* Adjust the margin to make space for the sidebar */
+            margin-top: 20px; /* Add margin to create space between the content and the sidebar */
+        }
+
+        .content h1,
+        .content p {
+            margin-top: 0; /* Reset the margin for the heading and paragraph */
+        }
+
+        .content img {
+            display: block; /* Ensure the image is displayed as a block element */
+            margin-top: 20px; /* Add margin to create space between the paragraph and the image */
+        }
+    </style>
 </head>
 <body>
-  <div id="nav">
-      <nav>
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-              <li><a href="work.html">Work</a></li>
-              <li><a href="leadership.html">Leadership</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-      </nav>
-  </div>
-  <p style="text-size-adjust: 1000px;"> Welcome to the JackBox </p>
+    <div class="sideways-banner">
+        <ul>
+            <li><p style="text-size-adjust: 1000px;">Jack Karakashian</p></li>
+            <li><img src="images/muffin.PNG" style="width:35%" /></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="activity.html">Activity</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to the JackBox</h1>
+        <p>I am a business undergraduate student at the University of Maryland, seeking my bachelor's in accounting and finance. I graduated from Richard Montgomery High School in June of 2022. I am looking to find a position after college in either accounting, finance, or sports. Please reach out!</p>
+        <img src="images/Jack_Karakashian_Headshot.png" style="width:60%" />
+    </div>
 </body>
 </html>
